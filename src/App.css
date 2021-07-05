@@ -1,16 +1,42 @@
-body, html {
-  width: 100%;
+.noPadding {
+  padding: 0;
+}
+
+.haveHeader {
+  margin-top: 50px;
+}
+
+.haveFooter {
+  margin-bottom: 50.8px;
+}
+
+p {
   margin: 0;
   padding: 0;
 }
 
-label{
-  display: block;
-  margin: 5px;
+.line {
+  display: flex;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
 
 .center {
   text-align: center;
+}
+
+.padding {
+  padding: 10px;
+}
+
+label{
+  display: block;
 }
 
 input {
@@ -31,12 +57,45 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  padding: 0;
+}
+
+.divButton {
+  cursor: pointer;
 }
 
 img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+img.big {
+  width: 75px;
+  height: 75px;
+}
+
+.separate {
+  justify-content: space-between;
+}
+
+.divGrey {
+  padding: 10px;
+
+  background-color: #F5F5F5;
+
+  border-radius: 15px;
+}
+
+button.white {
+  padding: 10px;
+
+  border: none;
+  
+  border-radius: 100px;
+  
+  font-weight: 400;
+  font-size: 18px;
 }
 
 button.button {
@@ -88,4 +147,49 @@ button.button {
 
   background: #EB00D3;
   background: linear-gradient(180deg, #EB00D3 0%, #9A20B9 100%);
+}
+
+.autoSize {
+  flex-grow: 1;
+}
+
+.left {
+  text-align: end;
+  justify-content: flex-end;
+}
+
+.smallGrey {
+  font-size: 15px;
+  color: #595959;
+}
+
+.smallRed {
+  font-size: 15px;
+  color: red;
+}
+
+.marginRight {
+  margin-right: 5px;
+}
+
+.marginTop {
+  margin-top: 5px;
+}
+
+.marginTenPixel {
+  margin: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }

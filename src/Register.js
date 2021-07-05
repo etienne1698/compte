@@ -9,11 +9,11 @@ function Register() {
         event.preventDefault()
         let data = {}
         for (let elem of event.target.elements) {
-          if (elem.name) {
-              data[elem.name] = elem.value
+            if (elem.name) {
+                data[elem.name] = elem.value
             }
         }
-        if(data.name && data.firstName && data.email && data.password) {
+        if (data.name && data.firstName && data.email && data.password) {
             AuthService.authenticate(() => history.push('/'))
         }
     }

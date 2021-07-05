@@ -8,6 +8,7 @@ import AuthService from './AuthService';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
+import Profile from './Profile';
 
 const SecretRoute = ({ component: Component, ...rest }) => {
     if (rest.path === '/login' || rest.path === '/register') {
@@ -39,8 +40,8 @@ const routes = [
         //component: HistoryByeUser
     },
     {
-        path: '/profil'
-        //component: Profil
+        path: '/profile',
+        component: Profile
     },
     {
         path: '/register',
@@ -53,14 +54,14 @@ const routes = [
 
 function Routes() {
     return (
-    <Switch>
-        {routes.map((route) => (
-            <SecretRoute key={route.path || 'default'}
-                path={route.path}
-                exact={route.exact}
-                component={route.component} />
-        ))}
-    </Switch>
+        <Switch>
+            {routes.map((route) => (
+                <SecretRoute key={route.path || 'default'}
+                    path={route.path}
+                    exact={route.exact}
+                    component={route.component} />
+            ))}
+        </Switch>
     )
 }
 
