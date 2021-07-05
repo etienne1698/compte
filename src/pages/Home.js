@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import Menu from './Menu';
-import OperationToValidates from './OperationToValidate';
-import Contacts from './Contacts';
-import Footer from './Footer';
+import Menu from '../components/Menu';
+import OperationToValidates from '../components/OperationToValidate';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
 
 function Home() {
+    const BUTTON_NAMES = {
+        ALL: 1,
+        CREDIT: 2,
+        DEBT: 3
+    }
+
     let creditTotal = 233.50;
     let detteTotal = 545524.1;
-    const [buttonSelected, setButtonSelected] = useState('all');
+    const [buttonSelected, setButtonSelected] = useState(BUTTON_NAMES.ALL);
+
+    
 
     return (
         <div className='haveHeader haveFooter'>
@@ -27,9 +35,9 @@ function Home() {
                 <OperationToValidates />
                 <label>Contacts</label>
                 <div className='line'>
-                    <button className={'autoSize' + (buttonSelected === 'all' ? ' button' : ' white')} onClick={() => setButtonSelected('all')}>Tout</button>
-                    <button className={'autoSize' + (buttonSelected === 'credit' ? ' button' : ' white')} onClick={() => setButtonSelected('credit')}>Credit</button>
-                    <button className={'autoSize' + (buttonSelected === 'debt' ? ' button' : ' white')} onClick={() => setButtonSelected('debt')}>Dette</button>
+                    <button className={'autoSize' + (buttonSelected === BUTTON_NAMES.ALL ? ' button' : ' white')} onClick={() => setButtonSelected(BUTTON_NAMES.ALL)}>Tout</button>
+                    <button className={'autoSize' + (buttonSelected === BUTTON_NAMES.CREDIT ? ' button' : ' white')} onClick={() => setButtonSelected(BUTTON_NAMES.CREDIT)}>Credit</button>
+                    <button className={'autoSize' + (buttonSelected === BUTTON_NAMES.DEBT ? ' button' : ' white')} onClick={() => setButtonSelected(BUTTON_NAMES.DEBT)}>Dette</button>
                 </div>
                 <Contacts/>
             </div>

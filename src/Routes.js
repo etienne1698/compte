@@ -4,11 +4,11 @@ import {
     Redirect,
     Switch,
 } from 'react-router-dom';
-import AuthService from './AuthService';
-import Login from './Login';
-import Register from './Register';
-import Home from './Home';
-import Profile from './Profile';
+import AuthService from './services/AuthService';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
 
 const SecretRoute = ({ component: Component, ...rest }) => {
     if (rest.path === '/login' || rest.path === '/register') {

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from './ImgProfile.jpg';
+import ProfileImage from '../assets/img/ImgProfile.jpg';
 import { AiFillDollarCircle } from 'react-icons/ai';
 import { useHistory } from 'react-router-dom';
 

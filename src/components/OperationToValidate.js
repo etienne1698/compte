@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from './ImgProfile.jpg';
+import ProfileImage from '../assets/img/ImgProfile.jpg';
 
 function OperationToValidate({ name, type, amount, label, date }) {
     return (

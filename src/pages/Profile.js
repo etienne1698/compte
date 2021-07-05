@@ -1,9 +1,9 @@
 import React from 'react';
-import Menu from './Menu';
-import ProfileImage from './ImgProfile.jpg';
-import Contacts from './Contacts';
-import ContactRequests from './ContactRequests';
-import OtherContacts from './OtherContacts';
+import Menu from '../components/Menu';
+import ProfileImage from '../assets/img/ImgProfile.jpg';
+import Contacts from '../components/Contacts';
+import ContactRequests from '../components/ContactRequests';
+import OtherContacts from '../components/OtherContacts';
 
 function Profile() {
     return (
