@@ -79,6 +79,11 @@ img.big {
   justify-content: space-between;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .divGrey {
   padding: 10px;
 

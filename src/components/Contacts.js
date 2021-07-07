@@ -14,7 +14,7 @@ function Contact({ name, type, amount }) {
                     <label>{name}</label>
                     {history.location.pathname === '/profile' ? <button className='smallRed'>Supprimer</button> : ''}
                 </div>
-                <div className='left'>
+                <div className='left column'>
                     <label className={(type === 'debt' ? 'red' : 'green')}>{(type === 'debt' ? 'Dette' : 'Credit') + ' - ' + amount + ' €'}</label>
                     <button className='line left divButton'>Historique <AiFillDollarCircle style={style} /></button>
                 </div>
